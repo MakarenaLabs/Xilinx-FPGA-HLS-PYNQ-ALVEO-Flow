@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../mul_pynqZ2_module.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_100M_3/sim/design_1_rst_ps7_0_100M_3.vhd" \
+"../../../../mul_pynqZ2_module.ip_user_files/bd/design_1/ip/design_1_axi_smc_4/bd_0/ip/ip_1/sim/bd_6cc2_psr_aclk_0.vhd" \
+
+# Do not sort compile order
+nosort

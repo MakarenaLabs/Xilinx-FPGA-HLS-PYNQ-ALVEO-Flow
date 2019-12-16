@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/./sim/autowrap/testbench/mul_matrix.cpp_pre.cpp.tb.cpp

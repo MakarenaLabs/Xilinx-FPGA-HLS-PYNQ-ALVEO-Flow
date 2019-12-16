@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 11 23:50:36 2019
+# Process ID: 21240
+# Current directory: /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_pynqZ2_module/mul_pynqZ2_module.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_pynqZ2_module/mul_pynqZ2_module.sim/sim_1/behav/xsim/xsim.dir/design_1_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_pynqZ2_module/mul_pynqZ2_module.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_pynqZ2_module/mul_pynqZ2_module.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_pynqZ2_module/mul_pynqZ2_module.sim/sim_1/behav/xsim/xsim.dir/design_1_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace

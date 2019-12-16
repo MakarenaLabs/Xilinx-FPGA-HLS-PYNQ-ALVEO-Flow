@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-21] The critical path in module 'dot_matrix' consists of the following:&#xA;&#x9;'load' operation ('c_t_load_1', dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp:46) on array 'c_t' [81]  (3.25 ns)&#xA;&#x9;'add' operation ('add_ln46', dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp:46) [82]  (2.55 ns)&#xA;&#x9;'store' operation ('c_t_addr_write_ln46', dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp:46) of variable 'add_ln46', dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp:46 on array 'c_t' [83]  (3.25 ns)" projectName="dot_matrix_pynqZ2_HLS" solutionName="solution1" date="2019-12-13T00:24:57.886+0100" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (9.06ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)." projectName="dot_matrix_pynqZ2_HLS" solutionName="solution1" date="2019-12-13T00:24:57.879+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

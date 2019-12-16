@@ -1,0 +1,4 @@
+dot_matrix_c_t
+dot_matrix_control_s_axi
+dot_matrix_gmem_m_axi
+dot_matrix
