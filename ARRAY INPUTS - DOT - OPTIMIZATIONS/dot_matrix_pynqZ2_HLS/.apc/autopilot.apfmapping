@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dot_matrix.cpp" path="/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/apc/tb/main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

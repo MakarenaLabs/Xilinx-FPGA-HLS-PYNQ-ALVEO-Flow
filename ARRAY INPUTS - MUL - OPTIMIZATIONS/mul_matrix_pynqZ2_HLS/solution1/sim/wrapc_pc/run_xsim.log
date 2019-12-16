@@ -1,0 +1,87 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/home/mklab/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/mklab/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_mul_matrix_top glbl -prj mul_matrix.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /home/mklab/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s mul_matrix 
+Multi-threading is on. Using 10 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/mul_matrix_gmem_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_buffer
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_read
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/mul_matrix.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_mul_matrix_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/mul_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_matrix
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/AESL_axi_master_gmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/mul_matrix_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_matrix_control_s_axi
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mul_matrix_control_s_axi
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_throttl_de...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_reg_slice(...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_buffer(DAT...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_fifo(DEPTH...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_write(NUM_...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_buffer(DAT...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_reg_slice(...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_read(NUM_R...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi(NUM_READ_O...
+Compiling module xil_defaultlib.mul_matrix
+Compiling module xil_defaultlib.AESL_axi_master_gmem
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.apatb_mul_matrix_top
+Compiling module work.glbl
+Built simulation snapshot mul_matrix
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/xsim.dir/mul_matrix/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/xsim.dir/mul_matrix/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Dec 12 00:00:09 2019. For additional details about this file, please refer to the WebTalk help file at /home/mklab/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 12 00:00:09 2019...
+
+****** xsim v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/mul_matrix/xsim_script.tcl
+# xsim {mul_matrix} -autoloadwcfg -tclbatch {mul_matrix.tcl}
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source mul_matrix.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 0 / 1 [79.43%] @ "100000145000"
+// RTL Simulation : 1 / 1 [100.00%] @ "188856935000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 188856975 ns : File "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/mul_matrix.autotb.v" Line 442
+run: Time (s): cpu = 00:00:00.03 ; elapsed = 00:05:35 . Memory (MB): peak = 1377.164 ; gain = 0.000 ; free physical = 9283 ; free virtual = 139788
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Dec 12 00:05:53 2019...

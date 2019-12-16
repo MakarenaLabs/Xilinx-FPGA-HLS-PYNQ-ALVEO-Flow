@@ -1,0 +1,5 @@
+   Build using "/home/mklab/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_mul_matrix.cpp
+   Compiling main.cpp_pre.cpp.tb.cpp
+   Compiling mul_matrix.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

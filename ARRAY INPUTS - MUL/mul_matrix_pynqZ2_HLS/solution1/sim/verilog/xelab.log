@@ -1,0 +1,51 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/home/mklab/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/mklab/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_mul_matrix_top glbl -prj mul_matrix.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /home/mklab/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s mul_matrix 
+Multi-threading is on. Using 10 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/mul_matrix_gmem_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_buffer
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_read
+INFO: [VRFC 10-311] analyzing module mul_matrix_gmem_m_axi_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/mul_matrix.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_mul_matrix_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/mul_matrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_matrix
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/AESL_axi_master_gmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/mul_matrix_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_matrix_control_s_axi
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mul_matrix_control_s_axi
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_throttl_de...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_reg_slice(...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_buffer(DAT...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_fifo(DEPTH...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_fifo(DATA_...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_write(NUM_...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_buffer(DAT...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_reg_slice(...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi_read(NUM_R...
+Compiling module xil_defaultlib.mul_matrix_gmem_m_axi(NUM_READ_O...
+Compiling module xil_defaultlib.mul_matrix
+Compiling module xil_defaultlib.AESL_axi_master_gmem
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.apatb_mul_matrix_top
+Compiling module work.glbl
+Built simulation snapshot mul_matrix

@@ -1,0 +1,16 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Thu Dec 12 21:26:45 2019
+| Host         : giulioc-G7-7790 running 64-bit Ubuntu 18.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mul_matrix_0_10'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mul_matrix_0_10 (xilinx.com:hls:mul_matrix:1.0) from (Rev. 1912121810) to (Rev. 1912122126)
+

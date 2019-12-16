@@ -1,0 +1,918 @@
+INFO-FLOW: Workspace /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1 opened at Fri Dec 13 00:24:32 CET 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.5 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.56 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.67 sec.
+Execute   set_part xc7z020clg400-1 -tool vivado 
+Execute     ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -rtl verilog 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       is_encrypted dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "/home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp" 
+INFO-FLOW: exec /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot -I /home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp
+Command       clang done; 1.26 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "/home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp"  -o "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot -I /home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.22 sec.
+INFO-FLOW: Done: GCC PP time: 2.5 seconds per iteration
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp std=gnu++98 -directive=/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp std=gnu++98 -directive=/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.dot_matrix.pp.0.cpp.diag.yml /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.dot_matrix.pp.0.cpp.out.log 2> /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.dot_matrix.pp.0.cpp.err.log 
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/tidy-3.1.dot_matrix.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/tidy-3.1.dot_matrix.pp.0.cpp.out.log 2> /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/tidy-3.1.dot_matrix.pp.0.cpp.err.log 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/xilinx-legacy-rewriter.dot_matrix.pp.0.cpp.out.log 2> /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/xilinx-legacy-rewriter.dot_matrix.pp.0.cpp.err.log 
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "/home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.bc" 
+INFO-FLOW: exec /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /home/mklab/Xilinx/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot -I /home/mklab/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.bc
+Command       clang done; 1.24 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.g.bc -hls-opt -except-internalize dot_matrix -L/home/mklab/Xilinx/Vivado/2019.1/lnx64/lib -lhlsm -lhlsmc++ -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 0.62 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 830.375 ; gain = 128.000 ; free physical = 4380 ; free virtual = 143114
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 830.375 ; gain = 128.000 ; free physical = 4380 ; free virtual = 143114
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.pp.bc -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/home/mklab/Xilinx/Vivado/2019.1/lnx64/lib -lfloatconversion -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.66 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top dot_matrix -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.g.0.bc -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 830.375 ; gain = 128.000 ; free physical = 4379 ; free virtual = 143113
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.g.1.bc -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.g.2.prechk.bc -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 830.375 ; gain = 128.000 ; free physical = 4380 ; free virtual = 143113
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.g.1.bc to /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.o.1.bc -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-501] Unrolling loop 'i_cycle' (dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp:36) in function 'dot_matrix' partially with a factor of 60.
+Command         transform done; 0.9 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.o.1.tmp.bc -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.86 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 830.375 ; gain = 128.000 ; free physical = 4345 ; free virtual = 143079
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.o.2.bc -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 300 on port 'gmem' (dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp:49:4) with 60 times. These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+Command         transform done; 9.4 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 894.375 ; gain = 192.000 ; free physical = 4312 ; free virtual = 143046
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 11.84 sec.
+Command     elaborate done; 16.34 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'dot_matrix' ...
+Execute       ap_set_top_model dot_matrix 
+Execute       get_model_list dot_matrix -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model dot_matrix 
+Execute       get_model_list dot_matrix -filter all-wo-channel 
+INFO-FLOW: Model list for configure: dot_matrix
+INFO-FLOW: Configuring Module : dot_matrix ...
+Execute       set_default_model dot_matrix 
+Execute       apply_spec_resource_limit dot_matrix 
+INFO-FLOW: Model list for preprocess: dot_matrix
+INFO-FLOW: Preprocessing Module: dot_matrix ...
+Execute       set_default_model dot_matrix 
+Execute       cdfg_preprocess -model dot_matrix 
+Command       cdfg_preprocess done; 0.37 sec.
+Execute       rtl_gen_preprocess dot_matrix 
+INFO-FLOW: Model list for synthesis: dot_matrix
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_matrix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dot_matrix 
+Execute       schedule -model dot_matrix 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+INFO: [SCHED 204-61] Pipelining loop 'k_cycle'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 12.
+WARNING: [SCHED 204-21] Estimated clock period (9.06ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'dot_matrix' consists of the following:
+	'load' operation ('c_t_load_1', dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp:46) on array 'c_t' [81]  (3.25 ns)
+	'add' operation ('add_ln46', dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp:46) [82]  (2.55 ns)
+	'store' operation ('c_t_addr_write_ln46', dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp:46) of variable 'add_ln46', dot_matrix_pynqZ2_HLS/apc/src/dot_matrix.cpp:46 on array 'c_t' [83]  (3.25 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 9.95 sec.
+INFO: [HLS 200-111]  Elapsed time: 27.56 seconds; current allocated memory: 146.760 MB.
+Execute       syn_report -verbosereport -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.verbose.sched.rpt 
+INFO: [HLS 200-434] Only 60 loops out of a total 121 loops have been pipelined in this design.
+Command       syn_report done; 4.48 sec.
+Execute       db_write -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.sched.adb -f 
+Command       db_write done; 0.46 sec.
+INFO-FLOW: Finish scheduling dot_matrix.
+Execute       set_default_model dot_matrix 
+Execute       bind -model dot_matrix 
+BIND OPTION: model=dot_matrix
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 4.59 sec.
+INFO: [HLS 200-111]  Elapsed time: 9.53 seconds; current allocated memory: 172.810 MB.
+Execute       syn_report -verbosereport -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.verbose.bind.rpt 
+Command       syn_report done; 2.57 sec.
+Execute       db_write -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.bind.adb -f 
+Command       db_write done; 0.51 sec.
+INFO-FLOW: Finish binding dot_matrix.
+Execute       get_model_list dot_matrix -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess dot_matrix 
+INFO-FLOW: Model list for RTL generation: dot_matrix
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_matrix' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model dot_matrix -vendor xilinx -mg_file /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'dot_matrix/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dot_matrix/a' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dot_matrix/b' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dot_matrix/c' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dot_matrix' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'b' and 'c' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_matrix'.
+Command       create_rtl_model done; 0.97 sec.
+INFO: [HLS 200-111]  Elapsed time: 4.05 seconds; current allocated memory: 204.628 MB.
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dot_matrix -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/syn/systemc/dot_matrix -synmodules dot_matrix 
+Execute       gen_rtl dot_matrix -istop -style xilinx -f -lang vhdl -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/syn/vhdl/dot_matrix 
+Command       gen_rtl done; 1.02 sec.
+Execute       gen_rtl dot_matrix -istop -style xilinx -f -lang vlog -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/syn/verilog/dot_matrix 
+Command       gen_rtl done; 0.54 sec.
+Execute       syn_report -csynth -model dot_matrix -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/syn/report/dot_matrix_csynth.rpt 
+Command       syn_report done; 0.5 sec.
+Execute       syn_report -rtlxml -model dot_matrix -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/syn/report/dot_matrix_csynth.xml 
+Command       syn_report done; 0.54 sec.
+Execute       syn_report -verbosereport -model dot_matrix -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.verbose.rpt 
+Command       syn_report done; 2.96 sec.
+Execute       db_write -model dot_matrix -f -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.adb 
+Command       db_write done; 1.38 sec.
+Execute       gen_tb_info dot_matrix -p /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix 
+Execute       export_constraint_db -f -tool general -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.constraint.tcl 
+Execute       syn_report -designview -model dot_matrix -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.design.xml 
+Command       syn_report done; 0.96 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model dot_matrix -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model dot_matrix -o /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks dot_matrix 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain dot_matrix 
+INFO-FLOW: Model list for RTL component generation: dot_matrix
+INFO-FLOW: Handling components in module [dot_matrix] ... 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.tcl 
+INFO-FLOW: Found component dot_matrix_c_t.
+INFO-FLOW: Append model dot_matrix_c_t
+INFO-FLOW: Found component dot_matrix_control_s_axi.
+INFO-FLOW: Append model dot_matrix_control_s_axi
+INFO-FLOW: Found component dot_matrix_gmem_m_axi.
+INFO-FLOW: Append model dot_matrix_gmem_m_axi
+INFO-FLOW: Append model dot_matrix
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: dot_matrix_c_t dot_matrix_control_s_axi dot_matrix_gmem_m_axi dot_matrix
+INFO-FLOW: To file: write model dot_matrix_c_t
+INFO-FLOW: To file: write model dot_matrix_control_s_axi
+INFO-FLOW: To file: write model dot_matrix_gmem_m_axi
+INFO-FLOW: To file: write model dot_matrix
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'dot_matrix_c_t_ram (RAM)' using block RAMs with power-on initialization.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         source ./control.slave.tcl 
+Execute         is_m_axi_addr64 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=dot_matrix xml_exists=0
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.constraint.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=4
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=4 #gSsdmPorts=0
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.dataonly.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.dataonly.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.dataonly.tcl 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.constraint.tcl 
+Execute       sc_get_clocks dot_matrix 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1038.387 ; gain = 336.012 ; free physical = 4091 ; free virtual = 142898
+INFO: [VHDL 208-304] Generating VHDL RTL for dot_matrix.
+INFO: [VLOG 209-307] Generating Verilog RTL for dot_matrix.
+Command     autosyn done; 32.94 sec.
+Command   csynth_design done; 49.29 sec.
+Command ap_source done; 50.02 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1 opened at Fri Dec 13 00:27:26 CET 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.45 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.52 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.61 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=dot_matrix xml_exists=1
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.constraint.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD:       copying IP vlog from /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=0
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.dataonly.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.compgen.dataonly.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=dot_matrix
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=dot_matrix
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.rtl_wrap.cfg.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.constraint.tcl 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/dot_matrix.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Execute     source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/mklab/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/dot_matrix_pynqZ2_HLS/solution1/impl/ip/pack.sh
+Command   export_design done; 11.48 sec.
+Command ap_source done; 12.09 sec.
+Execute cleanup_all 

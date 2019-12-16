@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec 12 00:00:10 2019
+# Process ID: 23416
+# Current directory: /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/mul_matrix/xsim_script.tcl}
+# Log file: /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/xsim.log
+# Journal file: /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/mul_matrix/xsim_script.tcl
+# xsim {mul_matrix} -autoloadwcfg -tclbatch {mul_matrix.tcl}
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source mul_matrix.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 0 / 1 [79.43%] @ "100000145000"
+// RTL Simulation : 1 / 1 [100.00%] @ "188856935000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 188856975 ns : File "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_matrix_pynqZ2/solution1/sim/verilog/mul_matrix.autotb.v" Line 442
+run: Time (s): cpu = 00:00:00.03 ; elapsed = 00:05:35 . Memory (MB): peak = 1377.164 ; gain = 0.000 ; free physical = 9283 ; free virtual = 139788
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Dec 12 00:05:53 2019...
