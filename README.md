@@ -22,7 +22,7 @@ The file "pynq-z2.zip" is the board file that you can use for Vivado HLS and Viv
 
 # Get Started video on YouTube
 This an example video for the desing pipeline:
-https://www.youtube.com/
+https://youtu.be/nA24mKoRq8k
 
 
 ### Todos
