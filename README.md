@@ -1,10 +1,18 @@
 # HLS Flow for FPGA design using Vivado HLS and Vivado on PYNQ
 
-![MakarenaLbs](https://www.makarenalabs.com/wp-content/uploads/2018/12/logo.png)
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+![MakarenaLabs](https://www.makarenalabs.com/wp-content/uploads/2018/12/logo.png)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 Simple examples for FPGA design using Vivado HLS for high level synthesis and Vivado for bitstream generation. Every example is created for PYNQ (http://www.pynq.io/) and the ZYNQ module. Tested on PYNQ Z2 (http://www.tul.com.tw/ProductsPYNQ-Z2.html) but is compatible with every board that support ZYNQ (e.g. ZCU 104, ZCU 102, Ultra96 etc.)
+
+
+### Download 
+Boot images are downloaded from the official site of the board (http://www.tul.com.tw/ProductsPYNQ-Z2.html)
+
+[<i class="fa fa-download"></i> PYNQ-Z2 Board File](https://d2m32eurp10079.cloudfront.net/Download/pynq-z2.zip)
 
 # Example structure
 
