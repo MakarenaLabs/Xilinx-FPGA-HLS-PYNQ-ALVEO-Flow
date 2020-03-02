@@ -35,10 +35,8 @@ EXAMPLE_DIR
 
 The directory of every example contais two sub-dirs:
  - ```<project>_HLS```: contains a sub-dir called ```apc```, which includes two sud-dirs: 
-
     - ```src```: contains the file with the declaration of the function that is to be accelerated; 
     - ```tb```: contains a testbench file, used to test if the previous function is correct.
-
  - ```jupyter notebooks```: contains the notebook file format to test previous files.
 
 The examples in this repo are:
