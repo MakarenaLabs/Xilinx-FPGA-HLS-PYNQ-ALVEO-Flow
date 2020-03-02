@@ -1,9 +1,0 @@
-
-****** Webtalk v2019.1 (64-bit)
-  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
-  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-source /media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_pynqZ2_module/mul_pynqZ2_module.hw/webtalk/labtool_webtalk.tcl -notrace
-INFO: [Common 17-186] '/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_pynqZ2_module/mul_pynqZ2_module.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Wed Dec 11 19:08:12 2019. For additional details about this file, please refer to the WebTalk help file at /home/mklab/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Wed Dec 11 19:08:12 2019...

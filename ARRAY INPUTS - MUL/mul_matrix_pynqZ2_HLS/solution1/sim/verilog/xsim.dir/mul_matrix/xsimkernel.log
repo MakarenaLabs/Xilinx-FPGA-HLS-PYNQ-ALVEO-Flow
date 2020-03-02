@@ -1,7 +1,0 @@
-Running: xsim.dir/mul_matrix/xsimk -simmode gui -wdb mul_matrix.wdb -simrunnum 0 -socket 56653
-Design successfully loaded
-Design Loading Memory Usage: 111452 KB (Peak: 111460 KB)
-Design Loading CPU Usage: 70 ms
-Simulation completed
-Simulation Memory Usage: 191596 KB (Peak: 244576 KB)
-Simulation CPU Usage: 335540 ms

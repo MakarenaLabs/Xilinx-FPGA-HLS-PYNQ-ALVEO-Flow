@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_pynqZ2_module/mul_pynqZ2_module.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_100M_3/sim/design_1_rst_ps7_0_100M_3.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'design_1_rst_ps7_0_100M_3'
-INFO: [VRFC 10-163] Analyzing VHDL file "/media/mklab/TerabyteHD/HOME_MKL/WORK/internal/mul_pynqZ2_module/mul_pynqZ2_module.ip_user_files/bd/design_1/ip/design_1_axi_smc_4/bd_0/ip/ip_1/sim/bd_6cc2_psr_aclk_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'bd_6cc2_psr_aclk_0'

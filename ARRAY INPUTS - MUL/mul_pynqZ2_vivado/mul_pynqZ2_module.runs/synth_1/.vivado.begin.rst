@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="mklab" Host="" Pid="13863" HostCore="12" HostMemory="32747900">
-    </Process>
-</ProcessHandle>
