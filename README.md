@@ -13,12 +13,7 @@ Boot images are downloaded from the official site of the board (http://www.tul.c
 
 # Example structure
 
-  - ARRAY INPUTS - MUL: multiplication between matrix (multidimensional array) using m_axi bus
-  - ARRAY INPUTS - MUL - OPTIMIZATION: multiplication between matrix (multidimensional array) using m_axi bus, array partition, loop unroll and pipeline
-  - ARRAY INPUTS - DOT: dot multiplication between matrix (multidimensional array) using m_axi bus
-  - ARRAY INPUTS - MUL - OPTIMIZATION: dot multiplication between matrix (multidimensional array) using m_axi bus, array partition, loop unroll and pipeline
-
-Every sub-dir is divided in this way:
+This is the structure of every example dir:
 ```bash
 EXAMPLE_DIR
 ├── <project>_HLS
