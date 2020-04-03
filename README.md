@@ -42,7 +42,7 @@ The examples in this repo are:
 
 # Get Started video on YouTube
 This an example video for the desing pipeline:
-https://youtu.be/nA24mKoRq8k
+https://youtu.be/mkUhYrmlX0k
 
 
 ### Todos
