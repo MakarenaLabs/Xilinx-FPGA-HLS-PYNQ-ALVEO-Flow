@@ -40,9 +40,10 @@ The examples in this repo are:
  - ```ARRAY INPUTS - MUL```: example to accelerate a multiplication between two matrices element by element. Each entry in the product matrix is the product of the first matrix element and the second matrix element;
  - ```ARRAY INPUTS - MUL - OPTIMIZATIONS```: example to optimize the previous acceleration;
 
-# Get Started video on YouTube
-This an example video for the desing pipeline:
-https://youtu.be/mkUhYrmlX0k
+# Get Started videos on YouTube
+These are example videos for the desing pipeline:
+ - ```PYNQ```: https://www.youtube.com/watch?v=mkUhYrmlX0k
+ - ```ALVEO```: https://www.youtube.com/watch?v=MuBzr28tUTM
 
 
 ### Todos
