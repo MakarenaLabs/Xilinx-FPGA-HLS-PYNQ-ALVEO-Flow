@@ -4,6 +4,11 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+# Get Started videos on YouTube
+These are example videos for the desing pipeline:
+ - ```PYNQ```: https://www.youtube.com/watch?v=mkUhYrmlX0k
+ - ```ALVEO```: https://www.youtube.com/watch?v=MuBzr28tUTM
+
 Simple examples for FPGA design using Vivado HLS for high level synthesis and Vivado for bitstream generation. Every example is created for PYNQ (http://www.pynq.io/) and the ZYNQ module. Tested on PYNQ Z2 (http://www.tul.com.tw/ProductsPYNQ-Z2.html) but is compatible with every board that support ZYNQ (e.g. ZCU104, ZCU102, Ultra96 etc.)
 
 Boot images are downloaded from the official site of the board (http://www.tul.com.tw/ProductsPYNQ-Z2.html)
@@ -39,11 +44,6 @@ The examples in this repo are:
  - ```ARRAY INPUTS - DOT - OPTIMIZATIONS```: example to optimize the previous acceleration;
  - ```ARRAY INPUTS - MUL```: example to accelerate a multiplication between two matrices element by element. Each entry in the product matrix is the product of the first matrix element and the second matrix element;
  - ```ARRAY INPUTS - MUL - OPTIMIZATIONS```: example to optimize the previous acceleration;
-
-# Get Started videos on YouTube
-These are example videos for the desing pipeline:
- - ```PYNQ```: https://www.youtube.com/watch?v=mkUhYrmlX0k
- - ```ALVEO```: https://www.youtube.com/watch?v=MuBzr28tUTM
 
 
 ### Todos
