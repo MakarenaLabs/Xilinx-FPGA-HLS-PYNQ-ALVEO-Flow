@@ -9,7 +9,10 @@ These are example videos for the desing pipeline:
  - ```PYNQ```: https://www.youtube.com/watch?v=mkUhYrmlX0k
  - ```ALVEO```: https://www.youtube.com/watch?v=MuBzr28tUTM
 
-Simple examples for FPGA design using Vivado HLS for high level synthesis and Vivado for bitstream generation. Every example is created for PYNQ (http://www.pynq.io/) and the ZYNQ module. Tested on PYNQ Z2 (http://www.tul.com.tw/ProductsPYNQ-Z2.html) but is compatible with every board that support ZYNQ (e.g. ZCU104, ZCU102, Ultra96 etc.)
+Simple examples for FPGA design using Vivado HLS for high level synthesis and Vivado for bitstream generation (above video tutorials step by step).
+
+Every example is created to be used with PYNQ (http://www.pynq.io/). 
+Tested on PYNQ Z2 (http://www.tul.com.tw/ProductsPYNQ-Z2.html) and ALVEO U250 board but is compatible with every board that support PYNQ framework (e.g. ZCU104, ZCU102, Ultra96 etc.).
 
 Boot images are downloaded from the official site of the board (http://www.tul.com.tw/ProductsPYNQ-Z2.html)
 
