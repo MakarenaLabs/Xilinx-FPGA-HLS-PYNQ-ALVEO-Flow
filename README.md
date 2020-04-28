@@ -2,7 +2,7 @@
 
 ![MakarenaLabs](https://www.makarenalabs.com/wp-content/uploads/2018/12/logo.png)
 
-![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 <hr />
 
@@ -22,6 +22,7 @@ These two links are example videos which will teach you how to create an IP modu
 The videos will show you how to create and build projects **Vivado HLS**, **Vivado** for **MPSoC** boards and how to export kernel from **Vivado HLS** for **SDx** or **SDAccel** environments in order to perform high level synthesis for **Alveo** boards.
 
 Every example is created to be used with **PYNQ** (http://www.pynq.io/).
+
 Tested on **PYNQ Z2** (http://www.tul.com.tw/ProductsPYNQ-Z2.html) and **Alveo U250** board but is compatible with every **MPSoC** board that support **PYNQ** framework (e.g. ZCU104, ZCU102, Ultra96 etc.).
 
 Boot images are downloaded from the official site of the board (http://www.tul.com.tw/ProductsPYNQ-Z2.html)
