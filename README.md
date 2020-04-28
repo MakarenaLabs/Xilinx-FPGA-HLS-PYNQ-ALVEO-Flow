@@ -1,18 +1,28 @@
-# HLS Flow for FPGA design using Vivado HLS and Vivado on PYNQ
+# HLS Flow for Alveo and MPSoC boards using Vivado HLS, Vivado and PYNQ
 
 ![MakarenaLabs](https://www.makarenalabs.com/wp-content/uploads/2018/12/logo.png)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-# Get Started videos on YouTube
-These are example videos for the desing pipeline:
- - ```PYNQ```: https://www.youtube.com/watch?v=mkUhYrmlX0k
+<hr />
+
+# Table of contents
+ - [Get Started with videos on YouTube](#get-started-with-videos-on-youtube)
+   - [Download PYNQ-Z2 Board File](#download-pynq-z2-board-file)
+ - [Example structure](#example-structure)
+ - [Todos](#todos)
+
+<hr />
+
+# Get Started with videos on YouTube
+These two links are example videos which will teach you how to create an IP module (*from zero to hero*) and using it with **PYNQ** on both **MPSoC** and **Alveo** boards:
+ - ```MPSoC```: https://www.youtube.com/watch?v=mkUhYrmlX0k
  - ```ALVEO```: https://www.youtube.com/watch?v=MuBzr28tUTM
 
-Simple examples for FPGA design using Vivado HLS for high level synthesis and Vivado for bitstream generation (above video tutorials step by step).
+The videos will show you how to create and build projects **Vivado HLS**, **Vivado** for **MPSoC** boards and how to export kernel from **Vivado HLS** for **SDx** or **SDAccel** environments in order to perform high level synthesis for **Alveo** boards.
 
-Every example is created to be used with PYNQ (http://www.pynq.io/). 
-Tested on PYNQ Z2 (http://www.tul.com.tw/ProductsPYNQ-Z2.html) and ALVEO U250 board but is compatible with every board that support PYNQ framework (e.g. ZCU104, ZCU102, Ultra96 etc.).
+Every example is created to be used with **PYNQ** (http://www.pynq.io/).
+Tested on **PYNQ Z2** (http://www.tul.com.tw/ProductsPYNQ-Z2.html) and **Alveo U250** board but is compatible with every **MPSoC** board that support **PYNQ** framework (e.g. ZCU104, ZCU102, Ultra96 etc.).
 
 Boot images are downloaded from the official site of the board (http://www.tul.com.tw/ProductsPYNQ-Z2.html)
 
@@ -53,9 +63,12 @@ The examples in this repo are:
 
  - examples using stream bus (HLS and Vivado)
  - examples for benchmark against numpy
+ - examples on Vitis
 
 License
 ----
 
 MIT
+
+Copyright © 2020 MakarenaLabs
 
